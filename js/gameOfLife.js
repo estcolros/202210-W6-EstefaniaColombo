@@ -24,10 +24,11 @@ export function createGrid() {
 //Create second grid
 //Create method checkAliveNextCell
 
-setInterval(() => {
-    //!Modificación de array, ahora esta imprimiendo solo la matriz "madre"  -->13/11
-    //Print table
-    const grid = createGrid();
-    console.table(grid);
-    console.log('-----------------------------------------------');
-}, 1000);
+//Comentado por async (test con jest)
+// setInterval(() => {
+//     //!Modificación de array, ahora esta imprimiendo solo la matriz "madre"  -->13/11
+//     //Print table
+//     const grid = createGrid();
+//     console.table(grid);
+//     console.log('-----------------------------------------------');
+// }, 1000);
