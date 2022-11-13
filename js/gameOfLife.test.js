@@ -1,7 +1,7 @@
 import { createGrid } from './gameOfLife';
 
-describe('Given createBoard function', () => {
-    test('Return a board with all 0', () => {
+describe('Given createGrid function', () => {
+    test('Return a grid with all 0', () => {
         const grid = createGrid(3, 3);
         const expected = 0;
         const result = grid[0][8];
