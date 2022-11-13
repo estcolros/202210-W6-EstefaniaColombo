@@ -11,6 +11,9 @@
         "test": "jest --watchAll --coverage",
         "test:prod": "jest --watchAll --coverage --watchAll=false"
     },
+    "prettier": {
+        "singleQuote": true
+    },
     "keywords": [],
     "author": "Estefania Colombo Rosario",
     "license": "ISC",
