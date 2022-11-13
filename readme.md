@@ -16,7 +16,7 @@ A summary of the rules:
     -   If it has 2 or 3 live contiguous cells, it survives.
 -   A dead cell follows the following rule: It remains dead until it has exactly 3 living contiguous cells, at which point it is "born".
 
-If you want to test how it works to get an idea, you can try a working version at [esta página](https://playgameoflife.com/).
+If you want to test how it works to get an idea, you can try a working version at [this page](https://playgameoflife.com/).
 
 ## Requirements
 
@@ -26,8 +26,8 @@ If you want to test how it works to get an idea, you can try a working version a
 4. GitActions should be used for the attached workflow.
 5. Main should be protected in GitHub so that everything that is merged goes through pull-request and the workflow is fulfilled.
 6. In the case of HTML/CSS.
-   6.1. BEM/SASS shall be used.
-   6.2. Netlify must be deployed.
+    - BEM/SASS shall be used.
+    - Netlify must be deployed.
 
 ## Milestones
 
@@ -35,5 +35,5 @@ If you want to test how it works to get an idea, you can try a working version a
 2. 100% tested program.
 3. Add HTML/CSS.
 4. Modify JS so that:
-   a. Cells continue to move forward when they reach the wall and disappear.
-   b. Cells exit on one side of the grid and appear on the other.
+    - Cells continue to move forward when they reach the wall and disappear.
+    - Cells exit on one side of the grid and appear on the other.
