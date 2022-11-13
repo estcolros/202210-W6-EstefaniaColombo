@@ -1,0 +1,35 @@
+{
+    "name": "week6",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "",
+        "prepare": "husky install",
+        "lint": "eslint .",
+        "test": "jest --watchAll --coverage",
+        "test:prod": "jest --watchAll --coverage --watchAll=false"
+    },
+    "keywords": [],
+    "author": "Estefania Colombo Rosario",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+        "@types/jest": "^29.2.2",
+        "eslint": "^8.27.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^8.0.2",
+        "jest": "^29.3.0"
+    },
+    "babel": {
+        "env": {
+            "test": {
+                "plugins": [
+                    "@babel/plugin-transform-modules-commonjs"
+                ]
+            }
+        }
+    }
+}
