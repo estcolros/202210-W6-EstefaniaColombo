@@ -3,7 +3,6 @@ export function getRandomInt(max) {
 }
 
 export function createGrid(columns, rows) {
-    //empty grid
     const array = new Array(columns);
     for (let i = 0; i < array.length; i++) {
         array[i] = new Array(rows);
