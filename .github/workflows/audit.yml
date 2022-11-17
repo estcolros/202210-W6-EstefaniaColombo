@@ -14,7 +14,7 @@ jobs:
       - name: Check if .editorconfig exists
         uses: andstor/file-existence-action@v1
         with:
-          files: ".editorconfig"
+          files: '.editorconfig'
           allow_failure: true
 
       - name: EditorConfig validation
@@ -23,7 +23,7 @@ jobs:
       - name: Ensure node_modules is ignored by Git
         uses: dkershner6/gitignore-parser@v1
         with:
-          must_deny: "node_modules/"
+          must_deny: 'node_modules/'
 
       - name: Install modules
         run: npm ci
@@ -34,8 +34,8 @@ jobs:
       - name: Check commit message length
         uses: gsactions/commit-message-checker@v1
         with:
-          pattern: "^[^#].{10,74}"
-          error: "The commit message length must be between 10 and 72"
-          excludeDescription: "true" # optional: this excludes the description body of a pull request
-          excludeTitle: "true" # optional: this excludes the title of a pull request
-          checkAllCommitMessages: "true" # optional: this checks all commits associated with a pull request
+          pattern: '^[^#].{10,74}'
+          error: 'The commit message length must be between 10 and 72'
+          excludeDescription: 'true' # optional: this excludes the description body of a pull request
+          excludeTitle: 'true' # optional: this excludes the title of a pull request
+          checkAllCommitMessages: 'true' # optional: this checks all commits associated with a pull request
