@@ -46,6 +46,8 @@ export function countNeighbors(array, i, j) {
 
 export function mirrorArray(array, columns, rows) {
     const secondArray = [].concat(createGrid(columns, rows));
+    // grid = createGrid(columns, rows);
+    // const secondArray = [...grid];
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length; j++) {
             if (array[i][j] === 0) {
@@ -68,11 +70,10 @@ const gameOfLife = () => {
 };
 gameOfLife();
 
-//Comentado por async (test con jest)
-// const gameOfLife = () => {
+// //Comentado por async (test con jest)
+// export function gameOfLife() {
 //     setInterval(() => {
 //         const outputGrid = GoT();
 //         console.table(outputGrid);
 //     }, 1000);
-// };
-// gameOfLife();
+// }
