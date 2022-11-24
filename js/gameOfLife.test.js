@@ -116,3 +116,5 @@ describe('Given mirrorArray function', () => {
         expect(expected).toEqual(result);
     });
 });
+
+
